@@ -50,7 +50,7 @@ class Move:
 
     def hold(self,x, y):
         x, y = self._get_coords_ratio(x, y)
-        pyautogui.mouseDown(x,y)
+        pyautogui.mouseDown(x,y, duration=0.4)
     
     def realease(self):
         pyautogui.mouseUp()

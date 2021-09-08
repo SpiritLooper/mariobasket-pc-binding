@@ -15,3 +15,6 @@ class Shot(AbstractCommand):
     def run(self):
         self.move.line(0.5, 0.9, 0.5, 0.1)
 
+class LoadShot(AbstractCommand):
+    def run(self, x, y):
+        self.move.hold(x,y)
