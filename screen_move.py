@@ -38,7 +38,7 @@ class Move:
     def tap(self, x_ratio, y_ratio):
         x, y = self._get_coords_ratio(x_ratio, y_ratio)
         pyautogui.mouseDown(x, y)
-        sleep(0.2)
+        sleep(0.1)
         pyautogui.mouseUp()
     
     def line(self, x1, y1, x2, y2):
@@ -51,6 +51,7 @@ class Move:
     def hold(self,x, y):
         x, y = self._get_coords_ratio(x, y)
         pyautogui.mouseDown(x,y, duration=0.4)
+        sleep(0.1)
     
     def realease(self):
         pyautogui.mouseUp()

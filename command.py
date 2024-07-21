@@ -32,7 +32,7 @@ class Counter(AbstractCommand):
         self.move.hold(x,y)
 
 class RealeaseCounter(AbstractCommand):
-    def run(self, x, y):
+    def run(self):
         self.move.realease()
 
 class Pass(AbstractCommand):
